@@ -1,0 +1,3 @@
+# packages in environment at /Users/Rensley/opt/anaconda3/envs/dev:
+#
+# Name                    Version                   Build  Channel
