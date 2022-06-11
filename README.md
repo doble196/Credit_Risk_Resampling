@@ -4,7 +4,7 @@ Credit risk poses a classification problem that’s inherently imbalanced. This 
 
 ## Instructions:
 
-This challenge consists of the following subsections:
+This Jupyter notebook consists of the following subsections:
 
 * Split the Data into Training and Testing Sets
 
@@ -14,7 +14,7 @@ This challenge consists of the following subsections:
 
 ### Split the Data into Training and Testing Sets
 
-Open the starter code notebook and then use it to complete the following steps.
+Open the `credit_risk_resampling.ipynb` notebook and then use it to complete the following steps.
 
 1. Read the `lending_data.csv` data from the `Resources` folder into a Pandas DataFrame.
 
@@ -72,7 +72,39 @@ Structure your report by using the report template that `Starter_Code.zip` inclu
 
 1. An overview of the analysis: Explain the purpose of this analysis.
 
+* This analysis is to find outliers and make sense of the data to predict if a person will make good on their loan or default. this way companies can save money when lending. 
+
 
 2. The results: Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of both machine learning models.
 
+* Classification Report
+                   pre       rec       spe        f1       geo       iba       sup
+
+          0       1.00      0.99      0.91      1.00      0.95      0.91     18765
+          1       0.85      0.91      0.99      0.88      0.95      0.90       619
+
+avg / total       0.99      0.99      0.91      0.99      0.95      0.91     19384
+
+* Classification Report on Test Data
+                   pre       rec       spe        f1       geo       iba       sup
+
+          0       1.00      0.99      0.99      1.00      0.99      0.99     18765
+          1       0.84      0.99      0.99      0.91      0.99      0.99       619
+
+avg / total       0.99      0.99      0.99      0.99      0.99      0.99     19384
+
+
+* ANSWER    * -Original classification report has %85 precision score for loans were predicted correctly to pay.  
+             -Test data classification report lost 1 point and has %91 precision score for loans predicted that were going to default.  
+            *
+        
+
+
+
 3. A summary: Summarize the results from the machine learning models. Compare the two versions of the dataset predictions. Include your recommendation for the model to use, if any, on the original vs. the resampled data. If you don’t recommend either model, justify your reasoning.
+
+            * I see original data for having higher `precision` score. the drop-off by test data is minimum to %1 percentage point. 
+            * Alternatively see test data for its higher `recall` score. 
+            * `F1` score is higher in the test data with %91 vs %88 for the original set.  
+
+        
