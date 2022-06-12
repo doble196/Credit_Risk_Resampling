@@ -95,16 +95,16 @@ avg / total       0.99      0.99      0.99      0.99      0.99      0.99     193
 
 
 * ANSWER    * -Original classification report has %85 precision score for loans were predicted correctly to pay.  
-             -Test data classification report lost 1 point and has %91 precision score for loans predicted that were going to default.  
-            *
+            *-Test data classification report lost 1 point and has %91 precision score for loans predicted that were going to  default.  
+        
         
 
 
 
-3. A summary: Summarize the results from the machine learning models. Compare the two versions of the dataset predictions. Include your recommendation for the model to use, if any, on the original vs. the resampled data. If you don’t recommend either model, justify your reasoning.
+3. A summary: Summarize the results from the machine learning models. Compare the two versions of the dataset predictions. Include your recommendation for the model to use, if any, on the original vs. the resampled data. If you don’t recommend either model, justify your reasoning.  
 
-            * I see original data for having higher `precision` score. the drop-off by test data is minimum to %1 percentage point. 
-            * Alternatively see test data for its higher `recall` score. 
+            * I see original data for having higher `precision` score. the drop-off by test data is minimum to %1 percentage point.  
+            * Alternatively see test data for its higher `recall` score.  
             * `F1` score is higher in the test data with %91 vs %88 for the original set.  
 
         
